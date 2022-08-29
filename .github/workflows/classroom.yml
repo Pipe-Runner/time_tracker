@@ -1,8 +1,12 @@
 name: GitHub Classroom Workflow
 on: push
+permissions:
+  checks: write
+  actions: read
+  contents: read
 jobs:
   build:
-    name: Auto Grading
+    name: Autograding
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
